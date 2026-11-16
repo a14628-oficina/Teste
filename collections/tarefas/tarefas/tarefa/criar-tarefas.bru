@@ -1,13 +1,17 @@
 meta {
   name: criar-tarefas
   type: http
-  seq: 0
+  seq: 1
 }
 
 post {
   url: http://127.0.0.1:5000/tarefas
   body: json
   auth: inherit
+}
+
+headers {
+  Authorization: Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NDg0NDgyMCwianRpIjoiNTA5MjFiY2ItYTc0NC00YWVjLWExYjktZDkyOTk4MDkwM2VjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTQ4NDQ4MjAsImNzcmYiOiIyMjRlYmI0MS0yNmVhLTRhNDgtODhjMS1mNWIxODJjODBiZGEiLCJleHAiOjE3OTQ4NDU0MjAsInRpcG8iOiJhZG1pbiJ9.svIYTAmPzCHEgruDwKZ0hpgozK807vZqfZ7v8snXuPs
 }
 
 body:json {
@@ -20,4 +24,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
