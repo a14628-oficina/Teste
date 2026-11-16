@@ -1,0 +1,23 @@
+meta {
+  name: criar-tarefas
+  type: http
+  seq: 0
+}
+
+post {
+  url: http://127.0.0.1:5000/tarefas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "titulo": "Estudar Flask",
+    "descricao": "Fazer o trabalho da API",
+    "estado": "Pendente"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
