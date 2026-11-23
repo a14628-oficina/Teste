@@ -16,6 +16,8 @@ class Tarefas(Resource):
     argumentos.add_argument("titulo", type=str, required=True, help="O título da tarefa é obrigatório")
     argumentos.add_argument("descricao", type=str, default="")
     argumentos.add_argument("estado", type=str, default="Pendente")
+        
+
 
     # Consultar tarefas
     @jwt_required()

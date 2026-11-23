@@ -20,7 +20,7 @@ app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=10)
 app.config["PROPAGATE_EXCEPTIONS"] = True  
 
 # CRIAR ROTAS(endpoints) para fazer os pedidos
-api.add_resource(UtilizadorRegisto, "/registo")
+api.add_resource(UtilizadorRegisto, "/registro")
 api.add_resource(UtilizadorLogin, "/login")
 api.add_resource(Tarefas, "/tarefas")
 api.add_resource(Tarefa, "/tarefas/<int:tarefa_id>")  
